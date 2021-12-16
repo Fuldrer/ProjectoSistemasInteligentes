@@ -235,7 +235,7 @@ def start():
 
         score()
 
-        im1 = pyautogui.screenshot(os.path.join("Assets/ScreenShots", "Prueba1.png"))
+        #im1 = pyautogui.screenshot(os.path.join("Assets/ScreenShots", "Prueba1.png"))
 
         clock.tick(30)
         pygame.display.update()
@@ -266,9 +266,10 @@ def menu(death_count):
                 run = False
                 pygame.quit()
                 quit()
-                sys.exit()
+                #sys.exit()
             if event.type == pygame.KEYDOWN:
                 start()
 
 
-menu(death_count=0)
+if __name__ == "_menu_":
+    menu(death_count=0)
